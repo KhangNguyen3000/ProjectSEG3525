@@ -48,4 +48,6 @@ li a:hover {
 .active {
   background-color: #4CAF50;
 }
-	
+.container{
+	display: flex;
+}
