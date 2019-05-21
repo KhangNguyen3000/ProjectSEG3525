@@ -5,26 +5,29 @@
   <meta charset="utf-8">
   <title>Welcome</title>
   <link rel="stylesheet" href="css/StyleSheet.css">
+  <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Menu</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
 </head>
 
 <h1>
   <script src="js/scripts.js"></script>
-  <img src="pics/uOttawa.png" alt="LOGO">
+  <img src="pics/uOttawa.png" alt="LOGO" class="one">
 </h1>
 
 <body>
-<ul>
-  <li><a class="active">Home</a></li>
-  <li><a>Selection de Ville</a></li>
-  <li><a>type de repas</a></li>
-  <div style="float:right" class = container>
-  <li style="float:right"><a><input type="text" placeholder="Search.."></a></li>
-  <button type="submit">submit</button>
-  </div>
+<ul class="menu br">
+  <li class="menu-item"><a class="active">Home</a></li>
+  <li class="menu-item"><a>Selection de Ville</a></li>
+  <li class="menu-item"><a>type de repas</a></li>
+  <div class="menu-item"style="float:right" class = "container">
+  <li class="menu-item" style="float:left"><input type="text" class="menu-item"placeholder="Search.." style="font-size:100%"></li>
+  <button class="menu-item" style="float:right;width:50px"type="submit"><img src="pics/search.png" alt="LogoSearch" class="two"></button>
 </ul>
 <div id="checkboxes">
   <label>choisi un location</label>
-  <ul>
+  <ul class="checkbox">
     <li><input type="checkbox"> checkbox 1</li>
     <li><input type="checkbox"> checkbox 2</li>
     <li><input type="checkbox"> checkbox 3</li>
