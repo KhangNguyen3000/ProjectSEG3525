@@ -17,23 +17,46 @@
 </h1>
 
 <body>
-<ul class="menu br">
-  <li class="menu-item"><a class="active">Home</a></li>
-  <li class="menu-item"><a>Selection de Ville</a></li>
-  <li class="menu-item"><a>type de repas</a></li>
+<ul class="menu br shadow">
   <div class="menu-item"style="float:right" class = "container">
   <li class="menu-item" style="float:left"><input type="text" class="menu-item"placeholder="Search.." style="font-size:100%"></li>
   <button class="menu-item" style="float:right;width:50px"type="submit"><img src="pics/search.png" alt="LogoSearch" class="two"></button>
 </ul>
-<div id="checkboxes">
-  <label>choisi un location</label>
-  <ul class="checkbox">
-    <li><input type="checkbox"> checkbox 1</li>
-    <li><input type="checkbox"> checkbox 2</li>
-    <li><input type="checkbox"> checkbox 3</li>
-    <li><input type="checkbox"> checkbox 4</li>
+<div class="gap"></div>
+<div>
+<div class="boxed br shadow pad" style="float:left">
+  <label>choisi un location: </label>
+<select>
+  <option value="Ottawa">Ottawa</option>
+  <option value="Montreal">Montreal</option>
+  <option value="Toronto">Toronto</option>
+  <option value="Quebec">Quebec</option>
+</select>
+</div>
+<div><br><br><br></div>
+<div class="boxed br shadow pad" style="float:left">
+  <label>choisi un temp: </label>
+<select>
+  <option value="Breakfast">Breakfast</option>
+  <option value="Lunch">Lunch</option>
+  <option value="Dinner">Dinner</option>
+</select>
+</div>
+<div><br><br><br></div> 
+ <ul class="boxed br shadow pad" style="float:left">
+    <label>choisi les types de restaurant: </label><br>
+    <li><input type="checkbox"> Italian</li>
+    <li><input type="checkbox"> African</li>
+    <li><input type="checkbox"> Asian</li>
+	<li><input type="checkbox"> Burger</li>
+    <li><input type="checkbox"> Chicken</li>
+    <li><input type="checkbox"> Indian</li>
+    <li><input type="checkbox"> Chicken Fingers</li>
   </ul>
 </div>
+<div><br><br><br><br></div>
+<div>
+<button class="boxed br shadow pad" type="button"> Confirm </button>
+</div>
 </body>
-
 </html>
