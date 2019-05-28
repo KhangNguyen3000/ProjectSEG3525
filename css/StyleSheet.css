@@ -27,21 +27,11 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  float: right;
 }
 
 li {
-  float: left;
   height: 100%;
   padding-bottom: 0px;
-}
-
-.menu {
-	height: 46px;
-}
-
-.menu-item {
-	height: 100%;
 }
 
 li a {
@@ -63,10 +53,7 @@ li a:hover {
 }
 
 body{
-	background-image: url("../pics/BG.jpg");
 	font-family: Arial;
-	background-repeat:no-repeat;
-	background-size:cover;
 }
 
 .br{
@@ -123,4 +110,48 @@ body{
 
 .fon{
 	font-size:1.2vw;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    margin-right: 40%;
+    margin-bottom: 20px;
+    padding-bottom: 1px;
+    padding-top: 3px;
+    padding-right: 4px;
+    background-color: white;
+}
+
+.card2 {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    margin-right: 40%;
+    margin-bottom: 10px;
+    padding-bottom: 1px;
+    padding-top: 10px;
+    padding-right: 4px;
+    background-color: white;
+}
+
+.card3 {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    background-color: white;
+}
+
+.Category{
+    font-size: 18px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid;
+}
+
+.split{
+    border-bottom: 1px solid;
+}
+
+.height{
+    height: 100;
 }
