@@ -42,6 +42,7 @@ body h1{
     padding-top: 3px;
     padding-right: 4px;
     background-color: white;
+    cursor: pointer;
 }
 
 /* Add rounded corners to the top left and the top right corner of the image */
