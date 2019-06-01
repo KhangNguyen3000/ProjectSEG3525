@@ -9,6 +9,7 @@
 <div class = "header">
     <header>
         <img src="pics/uOttawa.png" alt="uOttawa">
+        <script src="js/java.js"></script>
     </header>
 </div>
 <div class = "restaurant">
@@ -16,7 +17,7 @@
 </div>
 <div class = "cart">
     <h1>Your Cart</h1>
-    <span><p>Begin adding items to your order and they will show up here</p><p><button>Checkout</button></p></span>
+    <span><p id="cart">Begin adding items to your order and they will show up here</p><p><button>Checkout</button></p></span>
     
     </div>
 <div class="card">
@@ -25,29 +26,27 @@
     <h2>Try our delicious sandwiches customized to your
     liking!</h2>
     </div>
-    <h2>Chicken Shawarma Sandwich (6.99$)</h2>
-    <h3>Freshly chopped chicken is combined with your choice of healthy toppings and house-made sauces; served on a soft pita.<p><button>Add to cart</button></p>
+    <h2 id="chS">Chicken Shawarma Sandwich (6.99$)</h2>
+    <h3>Freshly chopped chicken is combined with your choice of healthy toppings and house-made sauces; served on a soft pita.<p><button onclick="addItem('Chicken Shawarma Sandwich',6.99)">Add to cart</button></p>
     </h3>
     
-    <h2>Beef Shawarma Sandwich (6.99$)</h2>
-    <h3>Fresh shaved beef layered with your choice of toppings and sauces. Served on a soft pita.<p><button>Add to cart</button></p></h3>
-    <h2>Lamb Shawarma Sandwich (7.99$)</h2>
-    <h3>Tender lamb served on a soft pita combined with your choice of toppings and sauces.<p><button>Add to cart</button></p></h3>
+    <h2 id="beS">Beef Shawarma Sandwich (6.99$)</h2>
+    <h3>Fresh shaved beef layered with your choice of toppings and sauces. Served on a soft pita.<p><button onclick="addItem('Beef Shawarma Sandwich',6.99)">Add to cart</button></p></h3>
+    <h2 id="laS">Lamb Shawarma Sandwich (7.99$)</h2>
+    <h3>Tender lamb served on a soft pita combined with your choice of toppings and sauces.<p><button onclick="addItem('Lamb Shawarma Sandwich',7.99)">Add to cart</button></p></h3>
     <h1>Platters</h1>
     <div class = "Category">
     <h2>Delicious platters served with your choice of 
         meat, combined with potatoes, rice, and house salad!</h2>
     </div>
-    <h2>Chicken Shawarma Platter (11.99$)</h2>
-    <h3>Chicken combined with potatoes,rice, garden salad and your choice of sauces.<p><button>Add to cart</button></p></h3>
-    <h2>Beef Shawarma Platter (11.99$)</h2>
-    <h3>Beef combined with potatoes,rice, garden salad and your choice of sauces.<p><button>Add to cart</button></p></h3>
-    <h2>Lamb Shawarma Platter (13.99$)</h2>
-    <h3>Lamb combined with potatoes,rice, garden salad and your choice of sauces.<p><button>Add to cart</button></p></h3>
-    <h2>Mixed Shawarma Platter (12.99$)</h2>
-    <h3>Chicken, Beef, and Lamb combined with potatoes,rice, garden salad and your choice of sauces.<p><button>Add to cart</button></p></h3>
-    
-    
+    <h2 id="chP">Chicken Shawarma Platter (11.99$)</h2>
+    <h3>Chicken combined with potatoes,rice, garden salad and your choice of sauces.<p><button onclick="addItem('Chicken Shawarma Platter',11.99)">Add to cart</button></p></h3>
+    <h2 id="beP">Beef Shawarma Platter (11.99$)</h2>
+    <h3>Beef combined with potatoes,rice, garden salad and your choice of sauces.<p><button onclick="addItem('Beef Shawarma Platter',11.99)">Add to cart</button></p></h3>
+    <h2 id="laP">Lamb Shawarma Platter (13.99$)</h2>
+    <h3>Lamb combined with potatoes,rice, garden salad and your choice of sauces.<p><button onclick="addItem('Lamb Shawarma Platter',13.99)">Add to cart</button></p></h3>
+    <h2 id="miP">Mixed Shawarma Platter (12.99$)</h2>
+    <h3>Chicken, Beef, and Lamb combined with potatoes,rice, garden salad and your choice of sauces.<p><button onclick="addItem('Mixed Shawarma Platter',12.99)">Add to cart</button></p></h3>
     
 </div>
 </body>
