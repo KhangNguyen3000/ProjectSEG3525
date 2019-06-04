@@ -24,7 +24,9 @@ function addItem(iden, price) {
     iprice.push(price);
     displayCart();
 }
+
 function checkout(){
-    sessionStorage("items",inames);
-    sessionStorage("prices",iprice);
+    sessionStorage.setItem("items",inames);
+    sessionStorage.setItem("prices",iprice);
+    window.location.href = 'ConfirmationPage.html';
 }

@@ -5,6 +5,8 @@
     <title>Title</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="css/ConfirmationPage.css" rel="stylesheet">
+    <script src="lib/jquery-3.4.1.min.js"></script>
+    <script src="js/confirmationpage.js"></script>
 </head>
 <body>
 <div class = "header">
@@ -19,14 +21,18 @@
     <p>Your Shopping Cart</p>
     </div>
 <div class = "summary">
-    <h3>Your Items:</h3>
-    <p>Chicken Shawarma (6.99) X1</p>
-    <p>Mixed Shawarma Platter (12.99) X1</p>
-    <p>goat</p>
+    <p class = "orderSummary"></p>
     </div>
 <div class = "Payment">
     <p>Payment Method: </p>
-    <p><button>Visa</button></p>
+    <p><button>Visa</button>
+        <form class = "visa-form">
+            First name:<br>
+            <input type="text" name="firstname"><br>
+            Last name:<br>
+            <input type="text" name="lastname">
+          </form>
+    </p>
     <p><button>Mastercard</button></p>
     <p><button>Paypal</button></p>
     </div>
