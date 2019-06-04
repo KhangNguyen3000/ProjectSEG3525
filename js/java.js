@@ -24,3 +24,7 @@ function addItem(iden, price) {
     iprice.push(price);
     displayCart();
 }
+function checkout(){
+    sessionStorage("items",inames);
+    sessionStorage("prices",iprice);
+}
