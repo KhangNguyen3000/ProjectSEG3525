@@ -2,6 +2,7 @@ var inames = [];
 var iprice = [];
 
 
+
 /*exported displayCart*/
 function displayCart() {
    var cartdata = "";
@@ -80,7 +81,8 @@ function removeI2(iname){
 /* exported first */
 /*eslint-env browser*/
 function first(){
-    if(sessionStorage.length < 1){
+
+    if(sessionStorage.getItem("items") == null){
          document.getElementById('cart').innerHTML = "Begin adding items to your order and they will show up here";
     }else{
         loadCart2();

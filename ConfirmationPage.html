@@ -21,21 +21,41 @@
     <p>Your Shopping Cart</p>
     </div>
 <div class = "summary">
-    <p class = "orderSummary"></p>
+    <p id="orderItems"></p>
     </div>
 <div class = "Payment">
     <p>Payment Method: </p>
-    <p><button>Visa</button>
-        <form class = "visa-form">
-            First name:<br>
-            <input type="text" name="firstname"><br>
-            Last name:<br>
-            <input type="text" name="lastname">
+    <p><button id = "visa-button">Visa</button>
+    <p><button id = "mastercard-button">Mastercard</button></p>
+        <form name = "cc-form" id = "credit-card-form">
+            <div class = "col-sm-6">
+            <div class="form-row">
+                <div class="col-sm-3">
+                  <input type="text" class="form-control" placeholder="First name">
+                </div>
+                <div class="col-sm-3">
+                  <input type="text" class="form-control" placeholder="Last name">
+                </div>
+              </div>
+              <div class="form-row">
+                    <div class="col-sm-3">
+                      <input type="number" class="form-control" placeholder="Card Number">
+                    </div>
+                    <div class="col-sm-3">
+                      <input type="number" class="form-control" placeholder="CVV">
+                    </div>
+                    <div class="row">
+                            <div class="col-sm-7">
+                                <div class="form-group">
+                                    <input id="cc-exp" name="cc-exp" type="tel" class="form-control cc-exp" required placeholder="MM / YY">
+                                    <span class="invalid-feedback">Enter the expiration date</span>
+                                </div>
+                            </div>
+                  </div>
+              </div>
           </form>
     </p>
-    <p><button>Mastercard</button></p>
-    <p><button>Paypal</button></p>
-    </div>
+    </div><br>
 <div class = "OrderNotes">
     <h3>Order Notes</h3>
     </div>
@@ -49,9 +69,10 @@
     </form>
 <div class = "OrderSummary">
     <h3>Order Summary</h3>
-    <p>Chicken Shawarma (6.99) </p>
-    <p>Mixed Platter (12.99) </p>
-    <h4>Order Total: 19.98</h4>
+    <p id = "subtotal">Subtotal: </p>
+    <p id = "tax">Tax: </p>
+    <p id = "deliveryFee">Delivery Fee: </p>
+    <p id = "total">Total: </p>
     <p><button>Checkout</button></p>
     </div>
 </body>
