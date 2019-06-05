@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <script src="lib/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="css/ConfirmationPage.css" rel="stylesheet">
-    <script src="lib/jquery-3.4.1.min.js"></script>
     <script src="js/confirmationpage.js"></script>
 </head>
 <body>
@@ -15,8 +17,12 @@
     </header>
     </div>
 <div class = "return">
-    <p>Back to Shop<p>
+    <button onclick="prev()">Back to Shop</button>
 </div>
+<div id="order-confirm" class="modal">
+        <p>Thank you! Your order is on it's way!</p>
+        <a href="#" rel="modal:close">Close</a>
+      </div>
 <div class = "title">
     <p>Your Shopping Cart</p>
     </div>
@@ -31,23 +37,28 @@
             <div class = "col-sm-6">
             <div class="form-row">
                 <div class="col-sm-3">
-                  <input type="text" class="form-control" placeholder="First name">
+                  <input type="text" name = "fname" class="form-control" placeholder="First name">
+                  <p id="fname"></p>
                 </div>
                 <div class="col-sm-3">
-                  <input type="text" class="form-control" placeholder="Last name">
+                  <input type="text" name = "lname" class="form-control" placeholder="Last name">
+                  <p id="lname"></p>
                 </div>
               </div>
               <div class="form-row">
                     <div class="col-sm-3">
-                      <input type="number" class="form-control" placeholder="Card Number">
+                      <input type="number" name = "cnum" class="form-control" placeholder="Card Number">
+                      <p id="cnum"></p>
                     </div>
                     <div class="col-sm-3">
-                      <input type="number" class="form-control" placeholder="CVV">
+                      <input type="number" name = "cvv" class="form-control" placeholder="CVV">
+                      <p id="cvv"></p>
                     </div>
                     <div class="row">
                             <div class="col-sm-7">
                                 <div class="form-group">
-                                    <input id="cc-exp" name="cc-exp" type="tel" class="form-control cc-exp" required placeholder="MM / YY">
+                                    <input id="cc-exp" name="ccexp" input type="number" class="form-control cc-exp" required placeholder="MM / YY" maxlength="4">
+                                    <p id="ccexp"></p>
                                     <span class="invalid-feedback">Enter the expiration date</span>
                                 </div>
                             </div>
@@ -63,7 +74,7 @@
     <div class ="col-sm-6">
     <div class ="form-group">
     <label for ="textarea"></label>
-        <textarea class="form-control" id="textarea" rows = "3",></textarea>
+        <textarea class="form-control" id="textarea" rows = "3"></textarea>
     </div>
         </div>
     </form>
@@ -73,7 +84,7 @@
     <p id = "tax">Tax: </p>
     <p id = "deliveryFee">Delivery Fee: </p>
     <p id = "total">Total: </p>
-    <p><button>Checkout</button></p>
+    <p><button onclick="validateForm()">Checkout</button></p>
     </div>
 </body>
 </html>
