@@ -20,10 +20,10 @@ function addItem(iden, price) {
     inames.push(iden);
     iprice.push(price);
     displayCart();
-}
+
 /* exported checkout */
 /*eslint-env browser*/
-function checkout(){
+function checkout2(){
     sessionStorage.clear();
     sessionStorage.setItem("inames", JSON.stringify(inames));
    sessionStorage.setItem("iprice", JSON.stringify(iprice));
@@ -85,4 +85,10 @@ function first(){
     }else{
         loadCart2();
     }
+=======
+
+function checkout(){
+    sessionStorage.setItem("items",inames);
+    sessionStorage.setItem("prices",iprice);
+    window.location.href = 'ConfirmationPage.html';
 }

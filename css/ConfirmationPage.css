@@ -102,3 +102,7 @@ textarea{
     float: left;
     margin-left: 0px;
 }
+
+.visa-form{
+    display: none;
+}
