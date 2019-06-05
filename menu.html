@@ -5,7 +5,7 @@
     <title>Menu</title>
     <link href="css/Menu.css" rel="stylesheet">
 </head>
-<body>
+<body onload="first()">
 <div class = "header">
     <header>
         <img src="pics/uOttawa.png" alt="uOttawa">
@@ -17,7 +17,7 @@
 </div>
 <div class = "cart">
     <h1>Your Cart</h1>
-    <span><p id="cart">Begin adding items to your order and they will show up here</p><p><button>Checkout</button></p></span>
+    <span><p id="cart"></p><p><a href="pagedeCommande.html"><button onclick="checkout()">Checkout</button></a></p></span>
     
     </div>
 <div class="card">
