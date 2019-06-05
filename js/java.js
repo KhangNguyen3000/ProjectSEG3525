@@ -20,7 +20,7 @@ function addItem(iden, price) {
     inames.push(iden);
     iprice.push(price);
     displayCart();
-
+}
 /* exported checkout */
 /*eslint-env browser*/
 function checkout2(){
@@ -85,7 +85,7 @@ function first(){
     }else{
         loadCart2();
     }
-=======
+}
 
 function checkout(){
     sessionStorage.setItem("items",inames);
