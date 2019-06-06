@@ -94,3 +94,7 @@ function checkout(){
     sessionStorage.setItem("prices",iprice);
     window.location.href = 'ConfirmationPage.html';
 }
+
+function prev() {
+    window.location.href = 'reslist.html';
+}
